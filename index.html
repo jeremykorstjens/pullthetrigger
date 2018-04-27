@@ -1,0 +1,145 @@
+<head>
+    <title>Pull the trigger</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+<body>
+	<div class="container">
+<div>
+  <div>
+    <h3>Shot</h3>
+<select id="select" onchange="test()">
+  <option selected="selected" value="none">Choose your shot</option>
+  <option value="pull">Pull</option>
+  <option value="snake">Snake</option>
+  <option value="pull">Push</option>
+</select>
+  </div>
+  <div>
+    <h3>Setup Time</h3>
+  <!-- Setup default 3 seconds -->
+  <select id="setup">
+  <option value="1">1 second</option>
+  <option value="2">2 second</option>
+  <option value="3" selected="selected">3 second</option>
+  <option value="4">4 second</option>
+  <option value="5">5 second</option>
+  <option value="6">6 second</option>
+  <option value="7">7 second</option>
+  <option value="8">8 second</option>
+  <option value="9">9 second</option>
+  <option value="10">10 second</option>
+  <option value="11">11 second</option>
+  <option value="12">12 second</option>
+  <option value="13">13 second</option>
+  <option value="14">14 second</option>
+  <option value="15">15 second</option>
+  </select>
+</div>
+  <div>
+    <h3>Minimum Time</h3>
+  <!-- Minimum default 3 seconds -->
+  <select id="minimum">
+  <option value="1">1 second</option>
+  <option value="2">2 second</option>
+  <option value="3" selected="selected">3 second</option>
+  <option value="4">4 second</option>
+  <option value="5">5 second</option>
+  <option value="6">6 second</option>
+  <option value="7">7 second</option>
+  <option value="8">8 second</option>
+  <option value="9">9 second</option>
+  <option value="10">10 second</option>
+  <option value="11">11 second</option>
+  <option value="12">12 second</option>
+  <option value="13">13 second</option>
+  <option value="14">14 second</option>
+  </select>
+</div>
+  <div>
+    <h3>Maximum Time</h3>
+ <!-- Maximum default 5 seconds -->
+<select id="maximum">
+  <option value="2">2 second</option>
+  <option value="3">3 second</option>
+  <option value="4">4 second</option>
+  <option value="5" selected="selected">5 second</option>
+  <option value="6">6 second</option>
+  <option value="7">7 second</option>
+  <option value="8">8 second</option>
+  <option value="9">9 second</option>
+  <option value="10">10 second</option>
+  <option value="11">11 second</option>
+  <option value="12">12 second</option>
+  <option value="13">13 second</option>
+  <option value="14">14 second</option>
+  <option value="15">15 second</option>
+</select> 
+</div>
+  <div>
+    <h3>Wait Time</h3>
+  <!-- Wait default 3 seconds -->
+<select id="wait">
+<option value="1">1 second</option>
+  <option value="2">2 second</option>
+  <option value="3" selected="selected">3 second</option>
+  <option value="4">4 second</option>
+  <option value="5">5 second</option>
+  <option value="6">6 second</option>
+  <option value="7">7 second</option>
+  <option value="8">8 second</option>
+  <option value="9">9 second</option>
+  <option value="10">10 second</option>
+  <option value="11">11 second</option>
+  <option value="12">12 second</option>
+  <option value="13">13 second</option>
+  <option value="14">14 second</option>
+  <option value="15">15 second</option>
+  </select>  
+</div>
+</div>
+<h3>Options</h3>
+  <form id="pull">
+    <div class="pull" >
+    <p>Straight</p>
+    <input type="checkbox" id="straight" value="straight">
+    
+  </div>
+    <div class="pull">
+    <p>Middle</p>
+    <input type="checkbox" id="middle" value="middle">
+  </div>
+    <div class="pull">
+    <p>Long</p>
+    <input type="checkbox" id="long" value="long">
+  </div>
+</form>
+  <form id="snake">
+    <div class="snake">
+    <p>Push</p>
+    <input type="checkbox" id="push" value="push">
+  </div>
+    <div class="snake">
+    <p>Straight</p>
+    <input type="checkbox" id="middle" value="straight">
+  </div>
+    <div class="snake">
+    <p>Pull</p>
+    <input type="checkbox" id="pull" value="pull">
+  </div>
+  </form>
+<div>
+<button onclick="check(1)">Start</button>
+<button onclick="check(0)">Stop</button> 
+</div>
+
+<!-- <h2 id="time"></h2>
+<h1 id="result"></h1> -->   
+
+<br> 
+ 
+</div>
+</body>

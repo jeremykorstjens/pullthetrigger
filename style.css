@@ -1,0 +1,55 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: black;
+}
+.container{
+    width:100%;
+    display:block;
+    margin:0 auto;
+    text-align: center;
+}
+option{
+    font-size: 30px;
+}
+select{
+    width:300px;
+    padding:10px;
+    font-size: 30px;
+}
+.pull,.snake {
+    display:inline-block;
+    padding:10px 30px;
+    margin:0 auto;
+    text-align: center;
+}
+button{
+    width:150px;
+    height:100px;
+    margin:0 auto;
+    display:inline-block;
+    text-align: center;
+    margin-top:10px;
+    font-size: 40px;
+}
+#snake{
+    display:none;
+}
+h3{
+    padding:5px;
+}
+p{
+    font-size: 20px;
+}
