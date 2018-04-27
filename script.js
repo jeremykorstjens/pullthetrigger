@@ -68,7 +68,9 @@ function pull(){
     }
   var random = Math.floor(Math.random() * type.length);
 /*  document.getElementById("result").innerHTML = type[random];*/
-  let audio = new Audio('./audio/robot/'+type[random]+'.mp3').play();
+  let audio = new Audio('./audio/robot/'+type[random]+'.mp3');
+   audio.volume = 1;
+  audio.play();
   var wait = document.getElementById("wait").value;
   wait = parseInt(wait) *1000;
   setTimeout(setup, wait);
@@ -86,7 +88,9 @@ function snake(){
     }
   var random = Math.floor(Math.random() * type.length);
 /*  document.getElementById("result").innerHTML = type[random];*/
-  let audio = new Audio('./audio/robot/'+type[random]+'.mp3').play();
+  let audio = new Audio('./audio/robot/'+type[random]+'.mp3');
+  audio.volume = 1;
+  audio.play();
   var wait = document.getElementById("wait").value;
   wait = parseInt(wait) *1000;
   setTimeout(setup, wait);
