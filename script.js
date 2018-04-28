@@ -22,13 +22,13 @@ function check(value){
   }
   if (value == true){
     run = true;
-/*    document.getElementById("start").style.display = "none";
-    document.getElementById("stop").style.display = "inline-block";*/
+    document.getElementById("start").style.display = "none";
+    document.getElementById("stop").style.display = "inline-block";
     setup();
   }else{
     run = false;
-/*    document.getElementById("start").style.display = "inline-block";
-    document.getElementById("stop").style.display = "none";*/
+    document.getElementById("start").style.display = "inline-block";
+    document.getElementById("stop").style.display = "none";
   }
 }
 
