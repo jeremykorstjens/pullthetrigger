@@ -7,7 +7,7 @@
 
 }
 
-label.checkbox input[type="checkbox"] {display:none;}
+/*label.checkbox input[type="checkbox"] {display:none;}
 label.checkbox span {
   display:inline-block;
   border:2px solid black;
@@ -24,7 +24,7 @@ label.checkbox :checked + span {
   background:black;
   width:40px;
   height:40px;
-}
+}*/
 
 .container{
     width:100%;
@@ -63,4 +63,7 @@ h3{
 }
 p{
     font-size: 20px;
+}
+#stop {
+    color:red;
 }
