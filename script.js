@@ -50,7 +50,11 @@ function load(){
   var random = (Math.random() * (maximum - minimum) + minimum);
 /*  document.getElementById("time").innerHTML = random.toFixed(2) + " seconds";
   document.getElementById("result").innerHTML = " ";*/
-  let audio = new Audio('./audio/robot/set.mp3').play();
+/*  let audio = new Audio('./audio/robot/set.mp3').play();*/
+let sound = new Howl({
+  src: ['./audio/robot/set.mp3']
+});
+sound.play();
   var select = document.getElementById("select").value;
   if(select == "pull"){
 setTimeout(pull, random*1000)
