@@ -103,37 +103,54 @@
 </div>
 <h3>Options</h3>
   <form id="pull">
-    <div class="pull" >
-    <p>Straight</p>
-    <input type="checkbox" id="straight" value="straight">
-    
-  </div>
     <div class="pull">
-    <p>Middle</p>
-    <input type="checkbox" id="middle" value="middle">
+    <label class="checkbox">
+      Straight <br>
+      <input type="checkbox" id="straight" value="straight"/>
+      <span></span>
+    </label>
   </div>
-    <div class="pull">
-    <p>Long</p>
-    <input type="checkbox" id="long" value="long">
+  <div class="pull">
+    <label class="checkbox">
+      Middle <br>
+      <input type="checkbox" id="middle" value="middle"/>
+      <span></span>
+    </label>
+  </div>
+  <div class="pull">
+    <label class="checkbox">
+      Long <br>
+      <input type="checkbox" id="long" value="long"/>
+      <span></span>
+    </label>
   </div>
 </form>
   <form id="snake">
     <div class="snake">
-    <p>Push</p>
-    <input type="checkbox" id="push" value="push">
+      <label class="checkbox">
+      Push <br>
+      <input type="checkbox" id="push" value="push"/>
+      <span></span>
+    </label>
   </div>
     <div class="snake">
-    <p>Straight</p>
-    <input type="checkbox" id="middle" value="straight">
+         <label class="checkbox">
+      Straight <br>
+      <input type="checkbox" id="straight" value="straight"/>
+      <span></span>
+    </label>
   </div>
     <div class="snake">
-    <p>Pull</p>
-    <input type="checkbox" id="pull" value="pull">
+      <label class="checkbox">
+      Pull <br>
+      <input type="checkbox" id="pull" value="pull"/>
+      <span></span>
+    </label>
   </div>
   </form>
 <div>
-<button onclick="check(1)">Start</button>
-<button onclick="check(0)">Stop</button> 
+<button onclick="check(1)" id="start">Start</button>
+<button onclick="check(0)" style="display:none" id="stop">Stop</button> 
 </div>
 
 <!-- <h2 id="time"></h2>

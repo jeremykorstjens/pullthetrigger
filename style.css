@@ -1,20 +1,31 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-box-sizing: border-box;
 
 }
-input[type='checkbox'] {
-    -webkit-appearance:none;
-    width:30px;
-    height:30px;
-    background:white;
-    border-radius:5px;
-    border:2px solid #555;
+
+label.checkbox input[type="checkbox"] {display:none;}
+label.checkbox span {
+  display:inline-block;
+  border:2px solid black;
+  border-radius:2px;
+  width:40px;
+  height:40px;
+  background:white;
+  vertical-align:middle;
+  margin:3px;
+  position: relative;
+  transition:width 0.1s, height 0.1s, margin 0.1s;
 }
-input[type='checkbox']:checked {
-    background: black;
+label.checkbox :checked + span {
+  background:black;
+  width:40px;
+  height:40px;
 }
+
 .container{
     width:100%;
     display:block;
@@ -31,7 +42,7 @@ select{
 }
 .pull,.snake {
     display:inline-block;
-    padding:10px 30px;
+    padding:10px 10px;
     margin:0 auto;
     text-align: center;
 }
