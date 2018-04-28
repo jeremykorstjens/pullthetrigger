@@ -50,7 +50,9 @@ function load(){
   var random = (Math.random() * (maximum - minimum) + minimum);
 /*  document.getElementById("time").innerHTML = random.toFixed(2) + " seconds";
   document.getElementById("result").innerHTML = " ";*/
-  let audio = new Audio('./audio/robot/set.mp3').play();
+  let audio = new Audio('./audio/robot/set.mp3');
+  audio.load();
+  audio.play();
   var select = document.getElementById("select").value;
   if(select == "pull"){
 setTimeout(pull, random*1000)
@@ -72,7 +74,8 @@ function pull(){
   var random = Math.floor(Math.random() * type.length);
 /*  document.getElementById("result").innerHTML = type[random];*/
   let audio = new Audio('./audio/robot/'+type[random]+'.mp3');
-   audio.volume = 1;
+  audio.volume = 1;
+  audio.load();
   audio.play();
   var wait = document.getElementById("wait").value;
   wait = parseInt(wait) *1000;
