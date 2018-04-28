@@ -65,6 +65,6 @@ p{
     font-size: 20px;
 }
 #stop {
-    display:none;
+/*    display:none;*/
     color:red;
 }
