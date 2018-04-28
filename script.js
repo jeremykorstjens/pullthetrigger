@@ -51,9 +51,9 @@ function load(){
 /*  document.getElementById("time").innerHTML = random.toFixed(2) + " seconds";
   document.getElementById("result").innerHTML = " ";*/
 /*  let audio = new Audio('./audio/robot/set.mp3').play();*/
-let sound = new Howl({
-  src: ['./audio/robot/set.mp3']
-});
+  let sound = new Howl({
+    src: ['./audio/robot/set.mp3']
+  });
 sound.play();
   var select = document.getElementById("select").value;
   if(select == "pull"){
@@ -75,7 +75,10 @@ function pull(){
     }
   var random = Math.floor(Math.random() * type.length);
 /*  document.getElementById("result").innerHTML = type[random];*/
-  let audio = new Audio('./audio/robot/'+type[random]+'.mp3').play();
+  let sound = new Howl({
+    src: ['./audio/robot/'+type[random]+'.mp3']
+  });
+  sound.play();
   var wait = document.getElementById("wait").value;
   wait = parseInt(wait) *1000;
   setTimeout(setup, wait);
@@ -93,8 +96,10 @@ function snake(){
     }
   var random = Math.floor(Math.random() * type.length);
 /*  document.getElementById("result").innerHTML = type[random];*/
-  let audio = new Audio('./audio/robot/'+type[random]+'.mp3').play();
-
+  let sound = new Howl({
+    src: ['./audio/robot/'+type[random]+'.mp3']
+  });
+  sound.play();
   var wait = document.getElementById("wait").value;
   wait = parseInt(wait) *1000;
   setTimeout(setup, wait);
