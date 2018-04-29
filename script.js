@@ -48,9 +48,6 @@ function load(){
   var maximum = document.getElementById("maximum").value;
   maximum = parseInt(maximum);
   var random = (Math.random() * (maximum - minimum) + minimum);
-/*  document.getElementById("time").innerHTML = random.toFixed(2) + " seconds";
-  document.getElementById("result").innerHTML = " ";*/
-/*  let audio = new Audio('./audio/robot/set.mp3').play();*/
   let sound = new Howl({
     src: ['./audio/robot/set.mp3']
   });
@@ -70,11 +67,13 @@ function pull(){
   var form = document.forms[0];
   for (i = 0; i < form.length; i++) {
         if (form[i].checked) {
+          var times = document.getElementById(form[i].value +"Weight").value;
+          for (times;times>0;times--){
             type.push(form[i].value);
+            }
+          }
         }
-    }
   var random = Math.floor(Math.random() * type.length);
-/*  document.getElementById("result").innerHTML = type[random];*/
   let sound = new Howl({
     src: ['./audio/robot/'+type[random]+'.mp3']
   });
@@ -91,11 +90,13 @@ function snake(){
     var form = document.forms[1];
   for (i = 0; i < form.length; i++) {
         if (form[i].checked) {
+          var times = document.getElementById(form[i].value +"Weight").value;
+          for (times;times>0;times--){
             type.push(form[i].value);
+            }
+          }
         }
-    }
   var random = Math.floor(Math.random() * type.length);
-/*  document.getElementById("result").innerHTML = type[random];*/
   let sound = new Howl({
     src: ['./audio/robot/'+type[random]+'.mp3']
   });
