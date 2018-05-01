@@ -49,8 +49,11 @@ function load(){
   maximum = parseInt(maximum);
   var random = (Math.random() * (maximum - minimum) + minimum);
   let sound = new Howl({
-    src: ['./audio/robot/set.mp3']
+    src: ['./audio/robot/set.mp3'],
+    html5: true
   });
+  console.log(random);
+  console.log(Math.round(random));
 sound.play();
   var select = document.getElementById("select").value;
   if(select == "pull"){
@@ -75,7 +78,8 @@ function pull(){
         }
   var random = Math.floor(Math.random() * type.length);
   let sound = new Howl({
-    src: ['./audio/robot/'+type[random]+'.mp3']
+    src: ['./audio/robot/'+type[random]+'.mp3'],
+    html5: true
   });
   sound.play();
   var wait = document.getElementById("wait").value;
@@ -98,7 +102,8 @@ function snake(){
         }
   var random = Math.floor(Math.random() * type.length);
   let sound = new Howl({
-    src: ['./audio/robot/'+type[random]+'.mp3']
+    src: ['./audio/robot/'+type[random]+'.mp3'],
+    html5: true
   });
   sound.play();
   var wait = document.getElementById("wait").value;
