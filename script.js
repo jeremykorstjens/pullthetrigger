@@ -1,4 +1,8 @@
 var run;
+window.addEventListener('load',() =>{
+  navigator.serviceWorker.register('sw.js');
+  console.log("serviceWorker active")
+});
 
 function test(){
   var test = document.getElementById("select").value;
